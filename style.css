@@ -1,0 +1,853 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background-color: #f7f3ec;
+    color: #2f2925;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+/* =========================
+   Header & Navigation
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: #011a3a;
+    color: #ffffff;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-size: 18px;
+    color: #9ed8f0;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav a {
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #9ed8f0;
+}
+/* =========================
+   Home Page - Hero
+========================= */
+
+.hero {
+    min-height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 60px 20px;
+
+      background-image:
+        linear-gradient(rgba(1, 26, 58, 0.45), rgba(1, 26, 58, 0.45)),
+        url("images/hero.jpg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h2 {
+    font-size: 48px;
+     color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+     color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    display: inline-block;
+
+    background-color: #011a3a;
+    color: #ffffff;
+
+    padding: 12px 28px;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: #9ed8f0;
+    color: #011a3a;
+}
+/* =========================
+   Home Page - About
+========================= */
+
+.about-preview {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #f7f3ec;
+}
+
+.about-preview h2 {
+    font-size: 36px;
+    color: #011a3a;
+    margin-bottom: 20px;
+}
+
+.about-preview p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+}
+
+.about-preview a {
+    display: inline-block;
+    color: #011a3a;
+    font-weight: bold;
+    border-bottom: 2px solid #9ed8f0;
+    padding-bottom: 4px;
+    transition: 0.3s ease;
+}
+
+.about-preview a:hover {
+    color: #0b4f71;
+}
+/* =========================
+   Home Page - Featured Menu
+========================= */
+
+.featured-menu {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #e8f3f7;
+}
+
+.featured-menu h2 {
+    font-size: 36px;
+    color: #011a3a;
+    margin-bottom: 10px;
+}
+
+.featured-menu > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+.featured-grid article img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+.featured-grid article {
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.featured-grid article:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.featured-grid article h3 {
+    font-size: 20px;
+    color: #011a3a;
+
+    margin: 15px 15px 8px;
+}
+
+.featured-grid article p {
+    font-size: 15px;
+
+    padding: 0 20px 20px;
+}
+.featured-menu > a {
+    display: inline-block;
+
+    background-color: #011a3a;
+    color: #ffffff;
+
+    padding: 12px 28px;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.featured-menu > a:hover {
+    background-color: #9ed8f0;
+    color: #011a3a;
+}
+/* =========================
+   Home Page - RUN Experience
+========================= */
+
+.experience {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #f7f3ec;
+}
+
+.experience h2 {
+    font-size: 36px;
+    color: #011a3a;
+    margin-bottom: 10px;
+}
+
+.experience > p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.experience-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.experience-items article {
+    flex: 1;
+    padding: 35px 25px;
+    border-top: 3px solid #9ed8f0;
+}
+
+.experience-items h3 {
+    font-size: 22px;
+    color: #011a3a;
+    margin-bottom: 15px;
+}
+
+.experience-items p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+/* =========================
+   Home Page - Visit Section
+========================= */
+
+.visit {
+    padding: 90px 8%;
+    text-align: center;
+    background-color: #011a3a;
+    color: #ffffff;
+}
+
+.visit h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.visit p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.visit a {
+    display: inline-block;
+
+    background-color: #9ed8f0;
+    color: #011a3a;
+
+    padding: 12px 30px;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+.visit a:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #001225;
+    color: #ffffff;
+    padding: 50px 8% 25px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer > p:first-of-type {
+    color: #c9dce8;
+    margin-bottom: 25px;
+}
+
+footer h3 {
+    color: #9ed8f0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #9ed8f0;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer p:last-child {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+    color: #a9bdc9;
+}
+/* =========================
+   About Page - Story
+========================= */
+
+.about-story {
+    padding: 100px 10%;
+    text-align: center;
+    background-color: #e8f3f7;
+}
+
+.about-story h2 {
+    font-size: 42px;
+    color: #011a3a;
+    margin-bottom: 25px;
+}
+
+.about-story p {
+    max-width: 800px;
+    margin: 0 auto;
+
+    font-size: 19px;
+    line-height: 2;
+}
+/* =========================
+   About Page - Details
+========================= */
+
+.about-details {
+    padding: 90px 10%;
+    background-color: #f7f3ec;
+}
+
+.about-details h2 {
+    font-size: 36px;
+    color: #011a3a;
+    margin-bottom: 20px;
+}
+.about-details p {
+    max-width: 750px;
+
+    font-size: 18px;
+    line-height: 2;
+
+    padding-right: 20px;
+    border-right: 3px solid #9ed8f0;
+}
+/* =========================
+   About Page - Coffee
+========================= */
+
+.about-coffee {
+    padding: 90px 10%;
+    background-color: #011a3a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-coffee h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #9ed8f0;
+}
+
+.about-coffee p {
+    max-width: 750px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 2;
+}
+/* =========================
+   About Page - Final
+========================= */
+
+.about-final {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f7f3ec;
+}
+
+.about-final h2 {
+    font-size: 34px;
+    color: #011a3a;
+    margin-bottom: 15px;
+}
+
+.about-final p {
+    font-size: 19px;
+    color: #4d4540;
+}
+/* =========================
+   Menu Page - Introduction
+========================= */
+
+.menu-intro {
+    padding: 90px 8%;
+    text-align: center;
+    background-color: #e8f3f7;
+}
+
+.menu-intro h2 {
+    font-size: 42px;
+    color: #011a3a;
+    margin-bottom: 15px;
+}
+
+.menu-intro p {
+    font-size: 19px;
+    color: #4d4540;
+}
+/* =========================
+   Menu Page - Sections
+========================= */
+
+.menu-section {
+    padding: 80px 8%;
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    color: #011a3a;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.menu-section h2::after {
+    content: "";
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    background-color: #9ed8f0;
+
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 320px));
+    justify-content: center;
+    gap: 25px;
+}
+.products-grid article {
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.products-grid article img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #ffffff;
+}
+.products-grid article h3 {
+    font-size: 21px;
+    color: #011a3a;
+
+    margin: 18px 20px 8px;
+}
+
+.products-grid article p {
+    font-size: 15px;
+    line-height: 1.8;
+
+    padding: 0 20px 22px;
+}
+.products-grid article:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
+}
+.hot-drinks {
+    background-color: #f7f3ec;
+}
+
+.cold-drinks {
+    background-color: #e8f3f7;
+}
+
+.desserts {
+    background-color: #f7f3ec;
+}
+/* =========================
+   Contact Page - Introduction
+========================= */
+
+.contact-intro {
+    padding: 90px 8%;
+    text-align: center;
+    background-color: #e8f3f7;
+}
+
+.contact-intro h2 {
+    font-size: 42px;
+    color: #011a3a;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    font-size: 19px;
+    color: #4d4540;
+}
+.contact-info {
+    padding: 80px 8%;
+    background-color: #f7f3ec;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    color: #011a3a;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.contact-grid article {
+    background-color: #ffffff;
+    padding: 22px 20px;
+    border-radius: 16px;
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.contact-grid h3 {
+    color: #011a3a;
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+.contact-grid p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4d4540;
+}
+
+.contact-grid a {
+    color: #4d4540;
+    font-size: 16px;
+}
+
+.contact-grid a:hover {
+    color: #0b4f71;
+}
+/* =========================
+   Contact Page - Form
+========================= */
+
+.contact-form-section {
+    padding: 80px 8%;
+    background-color: #e8f3f7;
+}
+
+.contact-form-section h2 {
+    font-size: 36px;
+    color: #011a3a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form-section > p {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.contact-form-section form {
+    max-width: 650px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form-section label {
+    color: #011a3a;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    width: 100%;
+    padding: 12px 15px;
+
+    border: 1px solid #c8dce5;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.contact-form-section input:focus,
+.contact-form-section textarea:focus {
+    outline: none;
+    border-color: #0b4f71;
+}
+
+.contact-form-section button {
+    margin-top: 15px;
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #011a3a;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form-section button:hover {
+    background-color: #9ed8f0;
+    color: #011a3a;
+}
+/* =========================
+   Contact Page - Order
+========================= */
+
+.order-section {
+    padding: 80px 8%;
+    text-align: center;
+
+    background-color: #f7f3ec;
+}
+
+.order-section h2 {
+    font-size: 36px;
+    color: #011a3a;
+
+    margin-bottom: 15px;
+}
+
+.order-section p {
+    font-size: 18px;
+    color: #4d4540;
+
+    margin-bottom: 30px;
+}
+
+.order-section a {
+    display: inline-block;
+
+    padding: 12px 30px;
+
+    background-color: #011a3a;
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.order-section a:hover {
+    background-color: #9ed8f0;
+    color: #011a3a;
+
+    transform: translateY(-3px);
+}
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    /* Home Page - Hero */
+    .hero {
+    min-height: 60vh;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 34px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+    /* Home Page - Featured Menu
+       Menu Page - Products */
+    .featured-grid,
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-grid article img,
+    .products-grid article img {
+        height: 320px;
+    }
+
+
+    /* Home Page - Experience */
+    .experience-items {
+        flex-direction: column;
+    }
+
+    .experience-items article {
+        width: 100%;
+    }
+
+
+    /* Contact Page - Information */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Large Page Titles */
+    .menu-intro h2,
+    .contact-intro h2,
+    .about-story h2 {
+        font-size: 34px;
+    }
+
+
+    /* Section Titles */
+    .menu-section h2,
+    .contact-info h2,
+    .contact-form-section h2,
+    .order-section h2,
+    .about-details h2,
+    .about-coffee h2,
+    .about-final h2 {
+        font-size: 30px;
+    }
+
+
+    /* Contact Form */
+    .contact-form-section form {
+        width: 100%;
+    }
+
+
+    /* Footer Navigation */
+    footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
